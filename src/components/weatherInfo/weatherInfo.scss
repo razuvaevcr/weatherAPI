@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+.weather{
+    &_wrapper{
+        background-color: yellow;
+        width: 700px;
+        margin: 50px auto;
+        border-radius: 10px;
+        padding: 10px 10px;
+    }
+    &_main{
+        width: 650px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-deg{
+            font-size: 70px;
+        }
+        &_condition{
+            font-size: 20px;
+            &-max{
+                margin-right: 2px;
+                &:before {
+                    content: '\2191';
+                }
+            }
+            &-min{
+                margin-left: 2px;
+                &:before {
+                    content: '\2193';
+                }
+            }
+        }
+        
+    }
+
+    &_title {
+        &-city, &-time{
+            margin: 0 20px;
+            text-align: left;
+        }
+
+    }
+    // &_descr {
+    //     &-wind-speed {
+
+    //     }
+    //     &-humidity {
+
+    //     }
+    //     &-pressure {
+
+    //     }
+    // }
+}
